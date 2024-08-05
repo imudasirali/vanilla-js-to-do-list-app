@@ -1,0 +1,12 @@
+* {
+    margin-bottom: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.delete_task {
+    margin-left: 12px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible To-do List App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 tabindex="-1" id="heading">To do list</h1>
+            <form action="index.html" method="post" id="to_do_form">
+                <label>
+                    Add a new tast to your list (required)
+                </label>
+                <div>
+                    <input id="todo" type="text" calss="task_input" required aria-describedby="example">
+                    <input class="add_task" type="submit" value="Add">
+                </div>
+                <div class="example" id="example">
+                    Example:  Feed the chicken
+                </div>
+
+            </form>
+            <ul id="list" class="list">
+            </ul>
+            <div role="status" aria-live="polite" id="sc_feedback" class="sc_feedback">
+                <!-- Area to be pronouceable by screen readers -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
